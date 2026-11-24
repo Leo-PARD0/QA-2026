@@ -13,19 +13,26 @@ Verifique se cada caractere é uma vogal (a, e, i, o, u) e conte-as.
 Imprima o número total de vogais na palavra.
 '''
 
-palavra = input('Digite a palavra: ')
+# usuário: geral
+
+palavra = input('Digite uma palavra: ').lower().strip() # paralelepípedo
 
 vogais = ['a', 'e', 'i', 'o', 'u']
 
-qtd_vogais = 0
+contar = 0
 
-for p in palavra:
-    for v in vogais:
-        if v == p:
-            qtd_vogais += 1
-            print (f'{p} em {palavra} é vogal')
-            break
-        else:
-            pass
+for letra in palavra:
 
-print(f'A quantidade de vogais é: {qtd_vogais}')
+    if letra in "aeiou":
+
+
+    '''for l in vogais:
+        if l == letra:
+            print (f'{letra} é uma vogal')
+            contar += 1
+            break'''
+
+print(f'A quantidade de vogais é: {contar}')
+
+
+# A != a  á != a
